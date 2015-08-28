@@ -2,7 +2,7 @@ using System;
 
 namespace Lab2
 {
-	class MainClass
+	class MainClass:Student
 	{
 		public static void Main (string[] args)
 		{
