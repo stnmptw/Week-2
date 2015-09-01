@@ -6,8 +6,8 @@ namespace Lab2
 	{
 		private string name;
 		private string id;
-		private int yearOfBirth;
-		private bool isActive;
+		private int YearOfBirth;
+		private bool IsActive;
 
 		public string Name
 		{
@@ -29,12 +29,12 @@ namespace Lab2
 			get
 			{ return id;}
 		}
-		public int YearOfBirth
+		public int yearOfBirth
 		{
 			set
 			{ 
 				if (value >=1950 && value <= 2000) {
-					yearOfBirth = DateTime.Now.Year - value;
+					YearOfBirth = DateTime.Now.Year - value;
 				} 
 				else {
 					Console.WriteLine ("{0} :error try setting invalid year-of-birth value!",id);
@@ -43,25 +43,25 @@ namespace Lab2
 			}
 			get
 			{
-				return yearOfBirth;
+				return YearOfBirth;
 
 			}
 		}
 
-		public bool IsActive
+		public bool isActive
 		{
 			set
 			{
-				isActive = value;
+				IsActive = value;
 			}
 			get
 			{
-				if (isActive == true) {
+				if (IsActive == true) {
 					
-					return isActive;
+					return IsActive;
 				} else {
 					
-					return isActive;
+					return IsActive;
 				}
 			}
 		}
